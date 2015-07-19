@@ -1,0 +1,41 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<div>
+	@Html.TextBox("query")
+	@Html.DropDownList("categoriaId", ViewBag.Categorias as IEnumerable<SelectListItem>)
+	<button class='search' type='button' onclick="search()">Buscar</button>
+</div>
+
+<div id="search-results">
+</div>
+
+@section Scripts {
+
+	@Scripts.Render("~/bundles/jquery",
+                    "~/bundles/jqueryajax")
+
+
+	<script type="text/javascript">
+
+		function search() {
+			var query = $('#query').val();
+			var categoria = $('#categoriaId').val();
+
+            if (query != null && query != undefined) {
+
+            	$.ajax({
+            		url: '/Buscar/Index',
+            		type: 'POST',
+					data: 'query=' + query + '&categoria=' + categoria,
+					complete: function (jqXHR) {
+						if(jqXHR.readyState === 4) {
+							$('#search-results').html(jqXHR.responseText);
+						}
+            		}
+            	});
+            }
+        }
+	</script>
+}
