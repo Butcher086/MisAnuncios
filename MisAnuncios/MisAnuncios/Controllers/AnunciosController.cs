@@ -9,7 +9,8 @@ using System.Web;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 
-namespace MisAnuncios.Models
+namespace MisAnuncios.Controllers
+
 {
     [Authorize]
     public class AnunciosController : Controller

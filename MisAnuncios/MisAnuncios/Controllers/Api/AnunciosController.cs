@@ -6,7 +6,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace MisAnuncios
+namespace MisAnuncios.Controllers.Api
 {
     public class AnunciosController : ApiController
     {
