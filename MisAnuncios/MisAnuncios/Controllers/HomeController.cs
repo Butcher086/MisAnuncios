@@ -26,5 +26,10 @@ namespace MisAnuncios.Controllers
 
             return View();
         }
+
+        public ActionResult Anuncios()
+        {
+            return View();
+        }
     }
 }
