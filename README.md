@@ -6,4 +6,3 @@ La web permite gestionar anuncios de autónomos dentro de cada ciudad donde oper
 Funcionalidad:
 - Se pueden crear usuarios mediante el panel de creacion, donde se debe introducir Nombre, Apellidos, Email, Ciudad y Contraseña.
 - Existe un administrador de servicios, que se encarga de añadir o quitar los servicios a ofertar.
-- 
