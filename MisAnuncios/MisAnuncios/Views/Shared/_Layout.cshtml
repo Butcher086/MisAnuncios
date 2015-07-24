@@ -34,9 +34,9 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Anuncios","Anuncios")</li>
-                    <li>@Html.ActionLink("Buscar", "Buscar")</li>
-                    <li>@Html.ActionLink("Gestionar Categorias", "Categorias")</li>
+                    <li>@Html.ActionLink("Anuncios","Index","Anuncios")</li>
+                    <li>@Html.ActionLink("Buscar", "Index", "Buscar")</li>
+                    <li>@Html.ActionLink("Gestionar Categorias", "Index", "Categorias")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -48,7 +48,7 @@
         <footer>
             <p>&copy; @DateTime.Now.Year - Mis Anuncios</p>
             <ul>
-                <li>@Html.ActionLink("API","")</li>
+                <li>@Html.ActionLink("API", "api/AnunciosController")</li>
             </ul>
         </footer>
     </div>
