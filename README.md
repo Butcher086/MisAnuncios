@@ -13,6 +13,5 @@ Funcionalidad:
 http://misanunciosdx.azurewebsites.net/api/ApiData?ciudad="NOMBRE CIUDAD"
 Donde cambiando el nombre de la ciudad tendremos acceso a dicha información.
 Por ejemplo: http://misanunciosdx.azurewebsites.net/api/ApiData?ciudad=madrid
-
 - La web se encuentra alojada en la siguiente URL:
 http://misanunciosdx.azurewebsites.net/
