@@ -6,9 +6,9 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 
-namespace MisAnuncios.Controllers.Api
+namespace MisAnuncios.Controllers
 {
-    public class AnunciosController : ApiController
+    public class ApiDataController : ApiController
     {
         private ApplicationDbContext db = new ApplicationDbContext();
 

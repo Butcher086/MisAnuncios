@@ -15,7 +15,7 @@ namespace MisAnuncios.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Sobre nosotros....";
 
             return View();
         }

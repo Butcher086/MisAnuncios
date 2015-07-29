@@ -32,8 +32,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>                    
                     <li>@Html.ActionLink("Anuncios","Index","Anuncios")</li>
                     <li>@Html.ActionLink("Buscar", "Index", "Buscar")</li>
                     <li>@Html.ActionLink("Gestionar Categorias", "Index", "Categorias")</li>
@@ -48,7 +47,7 @@
         <footer>
             <p>&copy; @DateTime.Now.Year - Mis Anuncios</p>
             <ul>
-                <li>@Html.ActionLink("API", "api/AnunciosController")</li>
+                <li>@Html.ActionLink("API","Index", "api/ApiData?ciudad=madrid")</li>
             </ul>
         </footer>
     </div>
